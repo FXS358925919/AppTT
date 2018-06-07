@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值积分(一元可以兑换30诚意分)"
+        android:textColor="#E83667"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/recharge_sincerity_ziding_custom"
+        android:layout_width="match_parent"
+        android:hint="输入您充值的诚意分数量"
+        android:layout_height="50dp" />
+</LinearLayout>

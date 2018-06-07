@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 用户图像 -->
+
+
+            <!-- 左边圆角图片 -->
+
+            <FrameLayout
+                android:id="@+id/left"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_leftlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/blurima"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="1dp"
+                    app:riv_oval="true" />
+
+            </FrameLayout>
+
+            <!-- 图像右边 -->
+
+            <RelativeLayout
+                android:id="@+id/levelshows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/left">
+
+                <!-- 等级图标 -->
+
+                <ImageView
+                    android:id="@+id/levelima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/nametime"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/level1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberlevel"
+                    android:layout_toRightOf="@id/levelima"
+                    android:layout_marginLeft="7dp"
+                    android:src="@mipmap/numberlev"
+                    android:layout_marginTop="1dp"
+                    android:visibility="visible"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/certification"
+                    android:layout_toRightOf="@id/numberlevel"
+                    android:layout_marginLeft="7dp"
+                    android:src="@mipmap/certificate"
+                    android:layout_marginTop="1dp"
+                    android:visibility="visible"/>
+
+                <RelativeLayout
+                    android:id="@+id/nametime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <!-- 用户昵称 -->
+                    <TextView
+                        android:id="@+id/voiuserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:text="急疯的兔子会咬人"
+                        android:textColor="@color/black_text" />
+
+                    <!-- 动态发布的时间 -->
+                    <TextView
+                        android:id="@+id/voitvAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/voiuserName"
+                        android:layout_marginTop="4dp"
+                        android:text="20分钟前" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ratewhole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/levelshows">
+
+                <RatingBar
+                    android:id="@+id/voiratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ratetext"
+                    android:numStars="5"
+                    android:rating="1.0"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    style="@style/Widget.AppCompat.RatingBar.Small" />
+
+                <TextView
+                    android:id="@+id/ratetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="打赏用户评级"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <!-- 显示正文 -->
+
+        <LinearLayout
+            android:id="@+id/layout_voiceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/voiceshape"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/voicetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textColor="@color/white_text"
+                android:text="50”" />
+            <TextView
+                android:id="@+id/auditableper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:textColor="@color/white_text"
+                android:text="可试听40%" />
+
+        </LinearLayout>
+
+        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layout_pinglun_fenxiang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:stretchMode="columnWidth">
+
+            <!-- 点赞 -->
+
+            <!-- 踩 -->
+            <LinearLayout
+                android:id="@+id/trample"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/dianzan"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="20%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cryface"/>
+
+                <TextView
+                    android:id="@+id/voitramplenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="0" />
+            </LinearLayout>
+
+
+            <!-- 礼物 -->
+            <LinearLayout
+                android:id="@+id/giftnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/trample"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="20%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/giftsend" />
+
+                <TextView
+                    android:id="@+id/voigiftnums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="0" />
+            </LinearLayout>
+
+            <!-- 评论 -->
+            <LinearLayout
+                android:id="@+id/reviewnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/giftnum"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="20%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/comment" />
+
+                <TextView
+                    android:id="@+id/voipinglun_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="1" />
+
+            </LinearLayout>
+
+            <!-- 转载 -->
+            <LinearLayout
+                android:id="@+id/reshipment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/reviewnum"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="20%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/resend" />
+
+                <TextView
+                    android:id="@+id/voifenxiang_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dianzan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="20%">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/smileface" />
+
+                <TextView
+                    android:id="@+id/voidianzan_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:text="0" />
+            </LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cececf"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:id="@+id/voice_hcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/voice_hcomment_item_isgoodcomment"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/goodcomment"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/voice_hcomment_item_comname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="朱东阳："
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/voice_hcomment_item_comcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:text="我是热评"/>
+
+        </LinearLayout>
+
+
+        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/layout_pinglun_fenxiang2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/layout_one"
+            android:layout_marginTop="2dp"
+            android:stretchMode="columnWidth"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/etPingLunContent3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:hint="我也说两句..."
+                android:orientation="horizontal"
+                android:textSize="25px"
+                app:layout_widthPercent="70%">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/button_send_comment3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="发送"
+                app:layout_widthPercent="25%"
+                android:layout_toRightOf="@+id/etPingLunContent3"
+                android:layout_toEndOf="@+id/etPingLunContent3" />
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

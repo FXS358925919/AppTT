@@ -1,0 +1,217 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackgroundFloating">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorTitleBar"
+            android:layoutDirection="ltr"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:id="@+id/my_function_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陈东阳"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/my_friends_count"
+            android:text="好友\n"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/my_atten_count"
+            android:text="关注\n0"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/my_follower_count"
+            android:text="粉丝\n0"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/my_gift_count"
+            android:text="礼物\n0"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:id="@+id/image_my_album"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/myalbum3x"
+            />
+        <TextView
+            android:id="@+id/my_album"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="相册" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/image_my_dynamic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mydynamic3x"
+            />
+
+        <TextView
+            android:id="@+id/my_my_affair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="动态" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:id="@+id/myfrgment_pocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/image_my_pocket"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mypocket3x"
+            />
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/my_my_pocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="钱包" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:id="@+id/myfrgment_recentChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/image_recentChat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mypocket3x"
+            />
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/my_recentChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="最近联系人" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:id="@+id/myfrgment_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/image_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/setting3x"
+            />
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/my_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="设置" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/activity_blur_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/bolck_titlebar"
+        layout="@layout/personal_center_layout_2" />
+
+    <com.TT.SincereAgree.amei.view.SimpleItemLayout
+        android:id="@+id/life_sil_free"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:show_bottomline="true"
+        app:show_leftimg="@drawable/shoucang"
+        app:show_text="公开照片" />
+
+    <GridView
+        android:id="@+id/life_grid_free"
+        android:layout_below="@+id/life_sil_free"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="4" >
+    </GridView>
+
+    <com.TT.SincereAgree.amei.view.SimpleItemLayout
+        android:id="@+id/life_sil_charge"
+        android:layout_below="@+id/life_grid_free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:show_bottomline="true"
+        app:show_leftimg="@drawable/shoucang"
+        app:show_text="付费查看图片" />
+    <GridView
+        android:id="@+id/life_grid_charge"
+        android:layout_below="@+id/life_sil_charge"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:columnWidth="80dp"
+        android:stretchMode="spacingWidthUniform"
+        android:numColumns="4" >
+    </GridView>
+
+    <com.TT.SincereAgree.amei.view.SimpleItemLayout
+        android:id="@+id/life_sil_vipfree"
+        android:layout_below="@+id/life_grid_charge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:show_bottomline="true"
+        app:show_leftimg="@drawable/shoucang"
+        app:show_text="VIP好友可见" />
+    <GridView
+        android:id="@+id/life_grid_vipfree"
+        android:layout_below="@+id/life_sil_vipfree"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:columnWidth="80dp"
+        android:stretchMode="spacingWidthUniform"
+        android:numColumns="4" >
+    </GridView>
+
+</RelativeLayout>
+</ScrollView>

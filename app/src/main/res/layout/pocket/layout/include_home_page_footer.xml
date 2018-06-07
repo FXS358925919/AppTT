@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flFooter"
+    android:layout_width="match_parent"
+    android:layout_height="74.0dip"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/include_footer_bg" >
+
+    <!--  -->
+
+    <FrameLayout
+        android:id="@+id/btn_ck"
+        android:layout_width="73.33328dip"
+        android:layout_height="73.33328dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:id="@+id/plus_btn"
+            android:layout_width="73.0dip"
+            android:layout_height="73.0dip"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_mainpage_send" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/layout_bottom_user"
+            android:layout_width="match_parent"
+            android:layout_height="53.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/image_user"
+                android:layout_width="37dip"
+                android:layout_height="37dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="0.5dip"
+                android:src="@drawable/skin_tabbar_icon_auth_select"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="0.5dip"
+                android:text="用户"
+                android:textColor="@color/white_text"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_bottom_square"
+            android:layout_width="match_parent"
+            android:layout_height="53.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/image_square"
+                android:layout_width="37dip"
+                android:layout_height="37dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="0.5dip"
+                android:src="@drawable/skin_tabbar_icon_square_select"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="0.5dip"
+                android:text="广场"
+                android:textColor="@color/white_text"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <FrameLayout
+            android:id="@+id/layout_bottom_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="53.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/image_wallet"
+                android:layout_width="37dip"
+                android:layout_height="37dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="0.5dip"
+                android:src="@drawable/skin_tabbar_icon_wallet_select"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="0.5dip"
+                android:text="钱包"
+                android:textColor="@color/white_text"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_bottom_me"
+            android:layout_width="match_parent"
+            android:layout_height="53.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/image_me"
+                android:layout_width="37dip"
+                android:layout_height="37dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="0.5dip"
+                android:src="@drawable/skin_tabbar_icon_me_select"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="0.5dip"
+                android:text="我"
+                android:textColor="@color/white_text"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

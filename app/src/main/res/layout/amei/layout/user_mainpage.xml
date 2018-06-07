@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_head_backgroud">
+
+        <ImageView
+            android:id="@+id/iv_head_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_head_circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/rl_head_backgroud"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_user_detail_1"
+        android:layout_below="@+id/iv_head_circle"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="张三"
+            android:textSize="18sp" />
+        <!-- 等级图标-->
+        <ImageView
+            android:id="@+id/iv_user_level"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/level_1"/>
+        <!-- 皇冠图标-->
+        <ImageView
+            android:id="@+id/iv_user_crown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_level"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/crown"/>
+        <!-- 认证图标-->
+        <ImageView
+            android:id="@+id/iv_user_auth"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_crown"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/authed"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_user_detail_2"
+        android:layout_below="@+id/rl_user_detail_1"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_user_detail_2_1">
+            <TextView
+                android:id="@+id/tv_user_major"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="医疗生物" />
+            <TextView
+                android:id="@+id/tv_user_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_major"
+                android:layout_marginLeft="20dp"
+                android:text="护士" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_user_detail_2_2"
+            android:layout_below="@+id/rl_user_detail_2_1"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_user_authed"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="已认证身份"
+                android:textColor="@color/red" />
+            <TextView
+                android:id="@+id/tv_user_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_authed"
+                android:layout_marginLeft="20dp"
+                android:text="寻找终身伴侣" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_user_detail_2_3"
+            android:layout_below="@+id/rl_user_detail_2_2"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_user_sex"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="女" />
+            <TextView
+                android:id="@+id/tv_user_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_sex"
+                android:layout_marginLeft="20dp"
+                android:text="寻找男" />
+            <TextView
+                android:id="@+id/tv_user_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_plan"
+                android:layout_marginLeft="20dp"
+                android:text="北京" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--START好友、关注、粉丝、最近联系人-->
+    <!--TODO 换成冯雪松已有的样子-->
+    <LinearLayout
+        android:id="@+id/info_dylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_user_detail_2"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/user_mainpage_friend"
+            android:text="好友\n"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/user_mainpage_editText7"
+            android:text="关注\n"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/user_mainpage_editText8"
+            android:text="粉丝\n"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+   <!--END 好友、关注、粉丝、最近联系人-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f5f9"/>
+
+    <!--START  生活照片-->
+    <RelativeLayout
+        android:id="@+id/lifephoto_dylayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.TT.SincereAgree.amei.view.SimpleItemLayout
+            android:id="@+id/item_title_life"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            zsg:show_bottomline="true"
+            zsg:show_leftimg="@drawable/red_vertical_line"
+            zsg:show_text="生活照片" />
+        <GridView
+            android:id="@+id/life_grid_pics"
+            android:layout_below="@+id/item_title_life"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:columnWidth="80dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="4" >
+        </GridView>
+    </RelativeLayout>
+    <!--END 生活照片-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f5f9"/>
+
+    <!--START  心情状态-->
+    <RelativeLayout
+        android:id="@+id/mood_dylayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.TT.SincereAgree.amei.view.SimpleItemLayout
+            android:id="@+id/item_title_mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            zsg:show_bottomline="true"
+            zsg:show_leftimg="@drawable/red_vertical_line"
+            zsg:show_text="心情状态" />
+        <RelativeLayout
+            android:layout_below="@+id/item_title_mood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mood_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/red"
+                android:textSize="48dp"
+                android:text="6" />
+            <TextView
+                android:id="@+id/mood_tv_desc"
+                android:layout_toRightOf="@+id/mood_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="条心情状态" />
+            <TextView
+                android:layout_toLeftOf="@+id/mood_tv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:text="去查看" />
+            <ImageView
+                android:id="@+id/mood_tv_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                style="@style/img_arrow"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--END 心情状态-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f5f9"/>
+
+    <!--START  详细资料-->
+    <RelativeLayout
+        android:id="@+id/detailinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <com.TT.SincereAgree.amei.view.SimpleItemLayout
+            android:id="@+id/item_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            zsg:show_bottomline="true"
+            zsg:show_leftimg="@drawable/red_vertical_line"
+            zsg:show_text="详细资料" />
+        <GridView
+            android:id="@+id/detailinfo_grid_lable_1"
+            android:layout_below="@+id/item_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:columnWidth="60dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="3" />
+        <GridView
+            android:id="@+id/detailinfo_grid_lable_2"
+            android:layout_below="@+id/detailinfo_grid_lable_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="2" >
+        </GridView>
+    </RelativeLayout>
+    <!--END 详细资料-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f5f9"/>
+
+    <!--START 最底下的送礼物、关注、聊天-->
+    <!--TODO 三个的所有点击事件由冯雪松添加引入-->
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.TT.SincereAgree.amei.view.ImageTextButton
+            android:id="@+id/bottom_sendgift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送礼物"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            style="?android:attr/borderlessButtonStyle"
+            zsg:myDrawableTop="@drawable/icon_gift_red">
+        </com.TT.SincereAgree.amei.view.ImageTextButton>
+        <com.TT.SincereAgree.amei.view.ImageTextButton
+            android:id="@+id/bottom_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/borderlessButtonStyle"
+            zsg:myDrawableTop="@drawable/icon_add_red">
+        </com.TT.SincereAgree.amei.view.ImageTextButton>
+        <com.TT.SincereAgree.amei.view.ImageTextButton
+            android:id="@+id/bottom_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="聊天"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            zsg:myDrawableTop="@drawable/icon_chat_red">
+        </com.TT.SincereAgree.amei.view.ImageTextButton>
+<!--        <View
+            android:layout_width="10dip"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:layout_toRightOf="@+id/bottom_sendgift"
+            android:layout_marginLeft="20dp"
+            />-->
+    </RelativeLayout>
+    <!--END 最底下的送礼物、关注、聊天-->
+
+
+</LinearLayout>
+</ScrollView>

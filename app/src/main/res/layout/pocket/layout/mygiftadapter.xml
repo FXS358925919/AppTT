@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/mygift_exchange_edit"
+        android:hint="请输入兑换数量"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/mygift_exchange_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/mygift_exchange_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分" />
+            <RadioButton
+                android:id="@+id/mygift_exchange_sincerity"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="诚意分"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mygift_exchange_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:background="#E83667"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="170dp"
+            android:text="确认"
+            />
+        <Button
+            android:id="@+id/mygift_exchange_button_quit"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:background="#E83667"
+            android:text="取消"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

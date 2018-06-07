@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_one_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_userInfo_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 用户图像 -->
+
+
+            <!-- 左边圆角图片 -->
+
+            <FrameLayout
+                android:id="@+id/left_square"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_leftlogo_square"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/blurima"
+                    app:riv_border_color="#FFFFFF"
+                    app:riv_border_width="1dp"
+                    app:riv_oval="true" >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </FrameLayout>
+
+            <!-- 图像右边 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/left_square">
+
+                <!-- 等级图标 -->
+                <!--
+                <ImageView
+                    android:id="@+id/square_date_levelima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/nametime_square"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/level1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numberlevel_square"
+                    android:layout_toRightOf="@id/square_date_levelima"
+                    android:layout_marginLeft="7dp"
+                    android:src="@mipmap/numberlev"
+                    android:layout_marginTop="1dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/certification_square"
+                    android:layout_toRightOf="@id/numberlevel_square"
+                    android:layout_marginLeft="7dp"
+                    android:src="@mipmap/certificate"
+                    android:layout_marginTop="1dp"
+                    android:visibility="invisible"/>
+                 -->
+                <RelativeLayout
+                    android:id="@+id/nametime_square"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <!-- 用户昵称 -->
+                    <TextView
+                        android:id="@+id/square_date_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:text="急疯的兔子会咬人"
+                        android:textColor="#050505" />
+
+                    <!-- 动态发布的时间 -->
+                    <TextView
+                        android:id="@+id/square_date_tvAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/square_date_userName"
+                        android:layout_marginTop="4dp"
+                        android:text="20分钟前" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ratewhole_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/square_date_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即报名"
+                    android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 显示正文 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_moodInfo_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+                <ImageView
+                    android:id="@+id/square_date_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:maxHeight="300dp"
+                    android:minHeight="0dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/blurima2"
+                    />
+                <LinearLayout
+                    android:id="@+id/square_date_userindfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/square_date_sexandage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="23"
+                        />
+                    <TextView
+                        android:id="@+id/square_date_constellation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="双子座"
+                        />
+                    <TextView
+                        android:id="@+id/square_date_userheight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="168cm"
+                        />
+                    <TextView
+                        android:id="@+id/square_date_userweight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="48kg"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/square_date_maintext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="期待和你一起看场电影，你呢？"
+                    />
+            <LinearLayout
+                android:id="@+id/square_date_classification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+                <TextView
+                    android:id="@+id/square_date_cla0"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="红包50元"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/square_date_cla1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="一束玫瑰"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/square_date_cla2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="看电影"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/square_date_cla3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="限男生"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/positionmark" />
+            <TextView
+                android:id="@+id/square_date_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" 成都 712km"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/timemark" />
+            <TextView
+                android:id="@+id/square_date_releaseday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="  2017-3-17"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

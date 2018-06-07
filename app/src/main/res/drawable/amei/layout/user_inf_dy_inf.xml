@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.TT.SincereAgree.amei.activity.UserDyInfActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="?attr/colorBackgroundFloating">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/usermood_iv_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/head"/>
+
+                <ImageView
+                    android:id="@+id/usermood_iv_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/usermood_tv_user_name"
+                    android:layout_below="@+id/usermood_iv_head"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="陈东阳"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usermood_rl_user_detail_1"
+                    android:layout_below="@+id/usermood_tv_user_name">
+
+                    <!-- 等级图标-->
+                    <ImageView
+                        android:id="@+id/usermood_iv_user_level"
+                        android:layout_toLeftOf="@+id/usermood_iv_user_crown"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/level_1"/>
+                    <!-- 皇冠图标-->
+                    <ImageView
+                        android:id="@+id/usermood_iv_user_crown"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/crown"/>
+                    <!-- 认证图标-->
+                    <ImageView
+                        android:id="@+id/usermood_iv_user_auth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/usermood_iv_user_crown"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/authed"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usermood_rl_user_detail_1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/usermood_user_line"
+                        android:layout_width="1dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/usermood_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/usermood_user_line"
+                        android:textSize="16sp"
+                        android:textColor="@color/red"
+                        android:text="已认证身份"/>
+
+                    <TextView
+                        android:id="@+id/usermood_user_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_toRightOf="@id/usermood_user_line"
+                        android:text="寻找终身伴侣"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/usermood_bottom_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#50666666"
+                    android:layout_alignBottom="@id/usermood_iv_background">
+                    <TextView
+                        android:id="@+id/usermood_user_friend"
+                        android:text="好友\n3"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/usermood_user_follow"
+                        android:text="关注\n3"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/usermood_user_fans"
+                        android:text="粉丝\n5"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            app:tabIndicatorColor="@color/paiddate_selected"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/paiddate_selected"
+            app:tabTextAppearance="@style/CustomTabTextAppearanceStyle"
+            app:tabTextColor="@android:color/background_dark" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

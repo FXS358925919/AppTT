@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MainPage_User"
+        android:checked="false"
+        android:icon="@drawable/ic_mainpage_user_45dp"
+        android:title="用户" />
+    <item
+        android:id="@+id/MainPage_Square"
+        android:icon="@drawable/ic_mainpage_square_35dp"
+        android:title="广场" />
+    <item
+        android:id="@+id/MainPage_Wallet"
+        android:icon="@drawable/ic_mainpage_wallet_46dp"
+        android:title="钱包" />
+    <item
+        android:id="@+id/MainPage_Me"
+        android:icon="@drawable/ic_mainpage_me_52dp"
+        android:title="我" />
+    <!--<item-->
+    <!--android:id="@+id/item4"-->
+    <!--android:icon="@drawable/ic_person_black_24dp"-->
+    <!--android:title="Contact"/>-->
+</menu>

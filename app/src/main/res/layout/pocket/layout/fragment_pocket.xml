@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackgroundFloating">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/pocket_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorTitleBar"
+            android:layoutDirection="ltr"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="钱包"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/pocket_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dashboard" />
+
+        <TextView
+            android:id="@+id/integral_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="#E83667"
+            android:textSize="40dp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/pocket_circle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/circle2" />
+
+        <ImageView
+            android:id="@+id/pocket_circle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pocket_fragment_button_exchange"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/exchangebutton"
+            android:text="兑换"
+
+            android:textColor="#E83667" />
+
+        <Button
+            android:id="@+id/pocket_fragment_button_withdrawal"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#E83667"
+            android:text="提现"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_Integral_acquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pocket_fragment_sign_acquire"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+125\n签到获得" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_reward_acquire"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+1000\n打赏获得" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_chat_acquire"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+2000\n聊天获得" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_share_acquire"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+50\n分享获得" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pocket_fragment_vip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pocket_fragment_image_vip"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/vip2x" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_text_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="会员"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pocket_fragment_recharge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pocket_fragment_image_recharge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/recharge3x" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_text_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="充值"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pocket_fragment_gift_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pocket_fragment_image_gift"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gift3x" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_text_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="礼品"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pocket_fragment_bill_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/pocket_fragment_image_bill"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gift3x" />
+
+        <TextView
+            android:id="@+id/pocket_fragment_text_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="账单"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

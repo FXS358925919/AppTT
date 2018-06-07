@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/recharge_integral_text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6000"
+        android:textColor="@color/black_text"
+        android:textSize="60dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前积分"
+        android:textSize="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/recharge_integral_layout1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button1"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="￥68"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recharge_integral_layout2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button2"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="￥168"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recharge_integral_layout3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button3"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="￥268"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/recharge_integral_layout4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15000积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button4"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="￥368"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/recharge_integral_layout5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30000积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button5"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="￥568"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/recharge_integral_layout6"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义积分"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:id="@+id/recharge_integral_button6"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="充值"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="#E83667"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择支付方式"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/recharge_integral_wechat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/wechatpayunclick"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="130dp"
+            />
+        <ImageView
+            android:id="@+id/recharge_integrel_ali"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/alipayunclick"
+            />
+    </LinearLayout>
+
+    <Button
+        android:text="确认支付"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#E83667"
+        android:id="@+id/recharge_integral_confirm" />
+</LinearLayout>

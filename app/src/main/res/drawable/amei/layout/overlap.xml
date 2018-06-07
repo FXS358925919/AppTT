@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_head_backgroud">
+
+        <ImageView
+            android:id="@+id/iv_head_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_head_circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/rl_head_backgroud"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_user_detail_1"
+        android:layout_below="@+id/rl_head_backgroud"
+        android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="张三"
+                android:textSize="18sp" />
+        <!-- 等级图标-->
+        <ImageView
+            android:id="@+id/iv_user_level"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/level_1"/>
+        <!-- 皇冠图标-->
+        <ImageView
+            android:id="@+id/iv_user_crown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_level"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/crown"/>
+        <!-- 认证图标-->
+        <ImageView
+            android:id="@+id/iv_user_auth"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_crown"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/authed"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_user_detail_2"
+        android:layout_below="@+id/rl_user_detail_1"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/rl_user_detail_2_1">
+            <TextView
+                android:id="@+id/tv_user_major"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="医疗生物"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_user_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_major"
+                android:layout_marginLeft="20dp"
+                android:text="护士"
+                android:textSize="16sp" />
+         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_user_detail_2_2"
+            android:layout_below="@+id/rl_user_detail_2_1"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_user_authed"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="已认证身份"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_user_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_authed"
+                android:layout_marginLeft="20dp"
+                android:text="寻找终身伴侣"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_user_detail_2_3"
+            android:layout_below="@+id/rl_user_detail_2_2"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_user_sex"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="女"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_user_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_sex"
+                android:layout_marginLeft="20dp"
+                android:text="寻找男"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_user_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_user_plan"
+                android:layout_marginLeft="20dp"
+                android:text="北京"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

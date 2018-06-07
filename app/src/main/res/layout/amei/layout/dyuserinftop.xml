@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 用户图像 -->
+        <!-- 左边圆角图片 -->
+        <FrameLayout
+            android:id="@+id/left"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_leftlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blurima"
+                app:riv_border_color="#FFFFFF"
+                app:riv_border_width="1dp"
+                app:riv_oval="true" />
+
+        </FrameLayout>
+
+        <!-- 图像右边 -->
+
+        <RelativeLayout
+            android:id="@+id/usrimaleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/left">
+
+            <!-- 等级图标 -->
+
+            <ImageView
+                android:id="@+id/levelima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/nametime"
+                android:src="@mipmap/level1" />
+
+            <ImageView
+                android:id="@+id/numberlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/levelima"
+                android:src="@mipmap/numberlev"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/certification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/numberlevel"
+                android:src="@mipmap/certificate"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/nametime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <!-- 用户昵称 -->
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:text="急疯的兔子会咬人"
+                    android:textColor="#050505" />
+
+                <!-- 动态发布的时间 -->
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userName"
+                    android:layout_marginTop="4dp"
+                    android:text="20分钟前" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ratewhole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/usrimaleft">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ratetext"
+                android:numStars="5"
+                android:rating="2.0"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                style="@style/Widget.AppCompat.RatingBar.Small" />
+
+            <TextView
+                android:id="@+id/ratetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="打赏用户评级"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cececf"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/layout_userInfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

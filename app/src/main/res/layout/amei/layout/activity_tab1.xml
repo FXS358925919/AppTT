@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.TT.SincereAgree.amei.activity.TabActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackgroundFloating">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:tabIndicatorColor="@color/paiddate_selected"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/paiddate_selected"
+            app:tabTextAppearance="@style/CustomTabTextAppearanceStyle"
+            app:tabTextColor="@android:color/background_dark"
+            android:fitsSystemWindows="false" />
+    </android.support.design.widget.AppBarLayout>
+<!--
+    <RelativeLayout
+        android:id="@+id/lineview"
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="#D6D7D7"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab1_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/send_paid_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.TT.SincereAgree.amei.activity.SendPaidDateActivity">
+    <com.TT.SincereAgree.amei.view.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true" >
+    </com.TT.SincereAgree.amei.view.TitleBar>
+    <RelativeLayout
+        android:id="@+id/rl_writemsgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+        <EditText
+            android:id="@+id/etMoodp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="想和约会的他说点什么"
+            android:scrollbars="vertical"
+            android:lines="6"
+            android:minLines="4" />
+
+        <GridView
+            android:id="@+id/gridViewp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMoodp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="4"
+            android:verticalSpacing="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/rl_writemsgp"
+        android:layout_marginTop="8dp"
+        android:background="#F3E8E8E8"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/datetimesex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/rl_writemsgp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:id="@+id/lineview"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/datetimer"
+            android:layout_marginTop="10dp"
+            android:background="#cececf"/>
+
+        <RelativeLayout
+            android:id="@+id/datesexr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_below="@+id/lineview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp">
+        <TextView
+            android:id="@+id/datesex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="报名性别"/>
+        <TextView
+            android:id="@+id/setdatesex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#fa0d48"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="7dp" />
+        <ImageButton
+            android:id="@+id/datesexarrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/setdatesex"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@mipmap/rightarrows" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/datetimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="约会时间"/>
+        <TextView
+            android:id="@+id/setdatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/datetime"
+            android:textColor="#fa0d48"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp" />
+        <ImageButton
+            android:id="@+id/datetimearrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/setdatetime"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/rightarrows" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/datetimesex"
+        android:layout_marginTop="8dp"
+        android:background="#F3E8E8E8"/>
+
+    <TextView
+        android:id="@+id/dateplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datetimesex"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="13dp"
+        android:text="约会地点"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/dateplace"
+        android:layout_marginTop="12dp"
+        android:background="#F3E8E8E8"/>
+
+    <RelativeLayout
+        android:id="@+id/datetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/datetimesex"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/datatypetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类别"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/datatypetext"
+            android:layout_marginTop="8dp"
+            android:background="#cececf"/>
+        <GridView
+            android:id="@+id/datatypegridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@+id/datatypetext"
+            android:layout_marginTop="20dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="4dp"
+            android:listSelector="#00000000"
+            android:numColumns="6"
+            android:padding="1dp"
+            android:scrollbars="none" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

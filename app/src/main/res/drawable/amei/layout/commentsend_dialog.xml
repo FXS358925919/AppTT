@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/comment_dialog_et"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_margin="1dp"
+            android:hint="我也说两句..."
+            android:orientation="horizontal"
+            android:textSize="25px"/>
+
+
+</LinearLayout>

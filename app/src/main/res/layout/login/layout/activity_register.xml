@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpic"
+    style="@style/AlertDialog.AppCompat.Light"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+    <!--
+<include layout="@layout/title"/>
+
+    <com.xuejinwei.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+-->
+    <TextView
+
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="16dp"
+        android:text="输入您的账号"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <!--
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spiner"/>
+        />
+    -->
+    <!--View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/-->
+
+    <EditText
+        android:id="@+id/register_username_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="输入账号"
+        android:textColor="@color/black_text" />
+
+    <!--View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/-->
+
+    <EditText
+        android:id="@+id/register_password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="输入密码，长度不小于6位"
+        android:textColor="#FFC7C7CD" />
+
+    <!--View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/-->
+
+    <Button
+        android:id="@+id/register_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:elevation="14dp"
+        android:text="下一步"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+
+</LinearLayout>
