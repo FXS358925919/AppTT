@@ -282,7 +282,7 @@
     <RelativeLayout
         android:id="@+id/detailinfo_layout"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="160dp">
         <com.TT.SincereAgree.amei.view.SimpleItemLayout
             android:id="@+id/item_title_detail"
             android:layout_width="match_parent"
@@ -296,15 +296,21 @@
             android:layout_below="@+id/item_title_detail"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:columnWidth="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:columnWidth="45dp"
+            android:horizontalSpacing="10dp"
             android:stretchMode="columnWidth"
-            android:numColumns="3" />
+            android:numColumns="4" />
         <GridView
             android:id="@+id/detailinfo_grid_lable_2"
             android:layout_below="@+id/detailinfo_grid_lable_1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:columnWidth="100dp"
+            android:horizontalSpacing="10dp"
             android:stretchMode="columnWidth"
             android:numColumns="2" >
         </GridView>

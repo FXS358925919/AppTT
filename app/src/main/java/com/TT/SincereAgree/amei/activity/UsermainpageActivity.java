@@ -130,6 +130,7 @@ public class UsermainpageActivity extends AppCompatActivity {
         personaLable1Data.add("24岁");
         personaLable1Data.add("158m");
         personaLable1Data.add("暂无");
+        personaLable1Data.add("暂无");
         personaLable2Data.add("现居城市：上海");
         personaLable2Data.add("期望三年内结婚");
         personLableGrid1Adapter = new PersonLabelAdapter(this,R.layout.user_mainpage,personaLable1Data);
